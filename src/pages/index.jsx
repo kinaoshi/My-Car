@@ -1,6 +1,6 @@
 import Head from "next/head";
-
 import { Header } from "src/components/Header";
+import Image from "next/image";
 
 export default function Home() {
 	const img1 = "/525-1.jpeg";
@@ -20,6 +20,7 @@ export default function Home() {
 				<div className="  h-10 border-2  leading-10">
 					<p className="text-red-500 text-4xl">MyCar紹介</p>
 				</div>
+				
 				<div className="border-2 mt-8 ">
 					<div className="flex overflow-x-auto space-x-4  ">
 						<a className="" href="/525-1.jpeg" target="_blank">

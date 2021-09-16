@@ -1,33 +1,36 @@
 import Head from "next/head";
-
 import Image from "next/image";
-import { useState } from "react";
 import { Header } from "src/components/Header";
-
-// const handlePhoto = () => {
-// 	return (
-// 		<Image
-// 			className="hover:opacity-60 cursor-pointer"
-// 			src={img2}
-// 			alt="img"
-// 			width={500}
-// 			height={310}
-// 		/>
-// 	);
-// };
 
 export default function Home() {
 	const img1 = "/525-1.jpeg";
 	const img2 = "/525-2.jpeg";
 	const img3 = "/525-3.jpeg";
 	const img4 = "/525-4.jpeg";
+	const Photos = [
+		{
+			photo: "/525-1.jpeg",
+		},
+		{
+			photo: "/525-2.jpeg",
+		},
+		{
+			photo: "/525-3.jpeg",
+		},
+		{
+			photo: "/525-4.jpeg",
+		},
+	];
 
-	const [isShow, setIsShow] = useState(true);
-	const handlePhoto = () => {
-		setIsShow((isShow) => {
-			return !isShow;
+	{
+		Photos.map((image) => {
+			console.log(image);
+			return (
+				<li key={image.index} src={image} alt="img" width={70} height={40}></li>
+			);
 		});
-	};
+	}
+	// const [isShow, setIsShow] = useState();
 
 	return (
 		<div>
@@ -39,13 +42,15 @@ export default function Home() {
 			</Head>
 			<main className="w-auto mt-8 mx-10">
 				<div className="  h-10 border-2  leading-10">
-					<p className="text-blue-500 text-4xl">MyCar紹介</p>
-				</div>
-				<div className="border-2 mt-8 ">
-					<p>画像をクリックすると大きくなります</p>
-
+					<p className="text-yellow-600 text-4xl">MyCar紹介</p>
 					<div className="flex overflow-x-auto space-x-4  ">
-						<span onClick={handlePhoto}>
+						<span
+							// onClick={handleChange(() => {
+							// 	setIsShow((isShow) => {
+							// 		return 
+							// 	})
+							// })}
+						>
 							<Image
 								className="hover:opacity-60 cursor-pointer"
 								src={img1}
@@ -86,12 +91,8 @@ export default function Home() {
 						</span>
 					</div>
 				</div>
+				<div></div>
 			</main>
-			<div>
-				<div className="mt-6 mx-auto max-w-lg max-h-full border-2">
-					<span>{isShow ? <img src={img1} /> : null}</span>
-				</div>
-			</div>
 		</div>
 	);
 }

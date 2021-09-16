@@ -16,6 +16,9 @@ export const Header = () =>  {
 				<Link href="/third">
 					<a className="mx-2">third</a>
 				</Link>
+				<Link href="/fourth">
+					<a className="mx-2">fourth</a>
+				</Link>
 			</div>
 		
 		</div>
