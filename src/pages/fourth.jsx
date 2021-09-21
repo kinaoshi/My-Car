@@ -3,34 +3,25 @@ import Image from "next/image";
 import { Header } from "src/components/Header";
 
 export default function Home() {
-	const img1 = "/525-1.jpeg";
-	const img2 = "/525-2.jpeg";
-	const img3 = "/525-3.jpeg";
-	const img4 = "/525-4.jpeg";
-	const Photos = [
-		{
-			photo: "/525-1.jpeg",
-		},
-		{
-			photo: "/525-2.jpeg",
-		},
-		{
-			photo: "/525-3.jpeg",
-		},
-		{
-			photo: "/525-4.jpeg",
-		},
-	];
-
-	{
-		Photos.map((image) => {
-			console.log(image);
-			return (
-				<li key={image.index} src={image} alt="img" width={70} height={40}></li>
-			);
-		});
-	}
-	// const [isShow, setIsShow] = useState();
+	// const photos = [
+	// 	{
+	// 		id: 1,
+	// 		photo:"/525-1.jpeg" ,
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		photo:"/525-2.jpeg" ,
+	// 	},
+	// ]
+	// return (
+	// 	<ul>
+	// 		{photos.map(id,photo => {
+	// 			<li>
+	// 				<img key={id} src={photo} /> 
+	// 			</li>
+	// 		})}
+	// 	</ul>
+	// )
 
 	return (
 		<div>
@@ -43,54 +34,12 @@ export default function Home() {
 			<main className="w-auto mt-8 mx-10">
 				<div className="  h-10 border-2  leading-10">
 					<p className="text-yellow-600 text-4xl">MyCar紹介</p>
-					<div className="flex overflow-x-auto space-x-4  ">
-						<span
-							// onClick={handleChange(() => {
-							// 	setIsShow((isShow) => {
-							// 		return 
-							// 	})
-							// })}
-						>
-							<Image
-								className="hover:opacity-60 cursor-pointer"
-								src={img1}
-								alt="img1"
-								width={70}
-								height={40}
-							/>
-						</span>
-
-						<span>
-							<Image
-								className="hover:opacity-60 cursor-pointer"
-								src={img2}
-								alt="img2"
-								width={70}
-								height={40}
-							/>
-						</span>
-
-						<span>
-							<Image
-								className="hover:opacity-60 cursor-pointer"
-								src={img3}
-								alt="img3"
-								width={70}
-								height={40}
-							/>
-						</span>
-
-						<span>
-							<Image
-								className="hover:opacity-60 cursor-pointer"
-								src={img4}
-								alt="img4"
-								width={70}
-								height={40}
-							/>
-						</span>
-					</div>
 				</div>
+					<div className=" h-40 border-2  leading-60">
+
+					<Image src="/525-1.jpeg" width={300} height={150} objectFit="contain"/>
+					</div>
+
 				<div></div>
 			</main>
 		</div>
