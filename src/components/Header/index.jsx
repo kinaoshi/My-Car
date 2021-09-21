@@ -7,34 +7,34 @@ export const Header = () =>  {
 	return (
 		<div className="">
 			
-			<div className="flex mt-8 mx-10 border-2 h-14 tracking-wider">
-				<div className="w-30 mx-4   border-2">
+			<div className="flex flex-wrap  mt-8 mx-10  h-14 ">
+				<div className="">
 				<Link href="/">
-					<a className="text-xl">HOME</a>
+					<a className="block leading-10 w-20 align-middle text-xl">HOME</a>
 				</Link>
 				</div>
-				<div className="w-30   mx-4  border-2">
+				<div className="">
 
 				<Link href="/second">
-					<a className="text-xl ">外装</a>
+					<a className="block w-20 leading-10 align-middle text-xl ">外装</a>
 				</Link>
 				</div>
-				<div className="box-border h-15 w-30  border-2 ">
+				<div className="">
 
 				<Link href="/third">
-					<a className="text-xl">内装</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">内装</a>
 				</Link>
 				</div>
-				<div className="w-24 ">
+				<div className="">
 
 				<Link href="/fourth">
-					<a className="text-xl mx-4 border-2">fourth</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">fourth</a>
 				</Link>
 				</div>
 				<div>
 
 				<Link href="/fifth">
-					<a className="text-xl mx-4 border-2">fifth</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">fifth</a>
 				</Link>
 				</div>
 			</div>

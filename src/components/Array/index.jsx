@@ -31,9 +31,9 @@ export const Array = () => {
 		setItems(PHOTOS);
 		setLoading(false);
 		setImages("/1.jpeg");
-	}, []);
+	}, [setItems]);
 	// setItems(PHOTOS);とすることによって、items にphotosが入ってくる。
-
+    // [setItems]として、再レンダリングを防ぐ
 	useEffect(() => {
 		getItems();
 	}, [getItems]);
@@ -48,13 +48,13 @@ export const Array = () => {
 
 	return (
 		<>
-			<div className="mt-4 ">
-				<span>
+			<div className="">
+				<span className="flex flex-wrap mt-2 ">
 					{items.map((item) => {
 						return (
 							<Image
 								key={item.id}
-								className=" hover:opacity-60 cursor-pointer "
+								className="hover:opacity-60 cursor-pointer "
 								src={item.img}
 								alt="Picture of the author"
 								width={70}
