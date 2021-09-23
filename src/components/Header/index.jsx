@@ -16,7 +16,7 @@ export const Header = () =>  {
 				<div className="">
 
 				<Link href="/second">
-					<a className="block w-20 leading-10 align-middle text-xl ">外装</a>
+					<a className="block w-20 leading-10 align-middle text-xl ">外観</a>
 				</Link>
 				</div>
 				<div className="">
