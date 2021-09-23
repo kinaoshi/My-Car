@@ -7,7 +7,7 @@ export const Header = () =>  {
 	return (
 		<div className="">
 			
-			<div className="flex flex-wrap  mt-8 mx-10  h-14 ">
+			<div className="flex flex-wrap  mt-3 mx-10  h-14 ">
 				<div className="">
 				<Link href="/">
 					<a className="block leading-10 w-20 align-middle text-xl">HOME</a>
@@ -28,13 +28,13 @@ export const Header = () =>  {
 				<div className="">
 
 				<Link href="/fourth">
-					<a className="block w-20 leading-10 align-middle  text-xl">fourth</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">ブログ</a>
 				</Link>
 				</div>
 				<div>
 
 				<Link href="/fifth">
-					<a className="block w-20 leading-10 align-middle  text-xl">fifth</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">その他</a>
 				</Link>
 				</div>
 			</div>

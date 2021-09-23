@@ -11,13 +11,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-			<main className=" w-auto h-screen mt-8 mx-10">
-				<div className="text-center h-10 border-2  leading-10">
-					<p className=" text-green-500 text-4xl">５番目</p>
-				</div>
-
-				<Array />
-			</main>
+			
 		</div>
 	);
 }

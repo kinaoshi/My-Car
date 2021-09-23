@@ -1,9 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import { useCallback, useEffect, useState } from "react";
 import { Header } from "src/components/Header";
 
 const Index = () => {
+	const [items, setItems] = useState([]);
+	const getItems = useCallback(() => {
+		const PHOTOS = [
+			{ id: "1", img: "/1.jpeg" },
+			{ id: "2", img: "/2.jpeg" },
+		];
+		setItems(PHOTOS);
+	}, [setItems]);
+	useEffect(() => {
+		getItems();
+	}, [getItems]);
+
 	return (
 		<div className="flex justify-center">
 			<div className=" container max-w-5xl max-h-full">
@@ -31,14 +43,21 @@ const Index = () => {
 						</div> */}
 						<div className="mb-16 mt-8">
 							<div className="h-screen mt-4">
-								<Image
-									src={"/1.jpeg"}
-									alt="Picture of the author"
-									width={700}
-									height={400}
-								/>
+								{items.map((item) => {
+									return (
+										<Image
+											key={item.id}
+											src={item.img}
+											alt="Picture of the author"
+											width={700}
+											height={400}
+										/>
+									);
+								})}
 							</div>
 						</div>
+
+			
 					</main>
 				</div>
 			</div>
