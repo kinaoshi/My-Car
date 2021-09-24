@@ -1,14 +1,15 @@
 module.exports = {
-  mode:"jit", 
+  "editor.quickSuggestions": { "strings": true },
+  mode:"jit",
   purge: ['src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
-  
+
   theme: {
     extend: {
       fontFamily: {
         fantasy: "fantasy",
         Courier:"Courier",
-                
+
       },
       fontFamily: {
         Arial:"Arial",
@@ -20,5 +21,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  
+
 }
