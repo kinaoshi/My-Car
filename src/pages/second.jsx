@@ -3,21 +3,14 @@ import Head from "next/head";
 import { Header } from "src/components/Header";
 
 import { Array2 } from "src/components/Second/outPhoto";
+import Title from "src/components/Title";
 
 const Second = () => {
 	return (
 		<div className="flex justify-center">
 			<div className=" container max-w-5xl h-screen">
 				<div className="m-6   border-yellow-800 border-2 p-3 rounded-lg bg-yellow-100">
-					<div className="flex flex-wrap mt-4">
-						<p className="font-bold font-Arial  text-red-600 text-6xl  text-left ml-10">
-							BMW525-D
-						</p>
-						<p className="font-bold p-2 text-yellow-900 text-4xl   ml-6">
-							の外観
-						</p>
-					</div>
-
+					<Title title="の外観"/>
 					<Header />
 					<Head>
 						<title>外観</title>

@@ -2,20 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 
 import { Header } from "src/components/Header";
+import Title from "src/components/Title";
 
 const Index = () => {
 	return (
 		<div className="flex justify-center">
 			<div className=" container max-w-5xl max-h-full">
 				<div className=" m-6   border-yellow-800 border-2 p-3 rounded-lg bg-yellow-100">
-					<div className="flex flex-wrap mt-4">
-						<p className="md:hover:bg-purple-300 font-bold font-Arial  text-red-600 text-6xl  text-left ml-10">
-							BMW525-D
-						</p>
-						<p className=" font-bold p-2 text-yellow-900 text-4xl   ml-6">
-							の紹介
-						</p>
-					</div>
+					<Title title="の紹介"/>
 
 					<Header />
 					<Head>
