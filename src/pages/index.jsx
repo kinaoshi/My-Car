@@ -27,7 +27,7 @@ const Index = () => {
 									width={700}
 									height={400}
 								/>
-								<span className="　h-10  italic absolute top-[5px] left-[10px] font-mono text-green-400 text-4xl">
+								<span className="italic absolute top-[5px] left-[10px] font-mono text-green-400 text-4xl md:hover:text-pink-400">
 									駆け抜ける喜び
 								</span>
 

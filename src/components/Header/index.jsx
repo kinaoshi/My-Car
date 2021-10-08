@@ -2,11 +2,11 @@
 import Link from "next/link";
 
 export const Header = () =>  {
-	
+
 
 	return (
 		<div className="">
-			
+
 			<div className="flex flex-wrap  mt-3 mx-10  h-14 ">
 				<div className="">
 				<Link href="/">
@@ -28,7 +28,7 @@ export const Header = () =>  {
 				<div className="">
 
 				<Link href="/fourth">
-					<a className="block w-20 leading-10 align-middle  text-xl">ブログ</a>
+					<a className="block w-20 leading-10 align-middle  text-xl">感想</a>
 				</Link>
 				</div>
 				<div>
@@ -38,7 +38,7 @@ export const Header = () =>  {
 				</Link>
 				</div>
 			</div>
-		
+
 		</div>
 	);
 }
