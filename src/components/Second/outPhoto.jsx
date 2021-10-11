@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
 export const Array2 = () => {
+
 	const [items, setItems] = useState([]);
 	// useStateの空配列が必要
 	const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ export const Array2 = () => {
 		getItems();
 	}, [getItems]);
 	// getItemsの中身が変われば、もう1度getItemsが走る。
+	
 
 	if (loading) {
 		return <div>ローディング中</div>;

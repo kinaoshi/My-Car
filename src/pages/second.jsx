@@ -6,10 +6,11 @@ import { Array2 } from "src/components/Second/outPhoto";
 import Title from "src/components/Title";
 
 const Second = () => {
+	
 	return (
 		<div className="flex justify-center">
 			<div className=" container max-w-5xl h-screen">
-				<div className="m-6   border-yellow-800 border-2 p-3 rounded-lg bg-yellow-100">
+				<div className="m-6   border-yellow-800 border-2 p-3 rounded-lg bg-blue-50">
 					<Title title="の外観"/>
 					<Header />
 					<Head>
