@@ -7,7 +7,7 @@ const Third = () => {
 	return (
 		<div className="flex justify-center">
 			<div className=" container max-w-5xl h-screen">
-				<div className="m-6   border-yellow-800 border-2 p-3 rounded-lg bg-pink-40">
+				<div className="m-6   border-yellow-800 border-2 p-3 rounded-lg bg-pink-50">
 					<Title title="の内装"/>
 					<Header />
 					<Head>
